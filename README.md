@@ -1,1 +1,0 @@
-# education-site-about-us-page
