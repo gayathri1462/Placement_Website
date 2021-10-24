@@ -106,7 +106,8 @@ header {
 /*****************Footer section***************/
 
 footer {
-    padding: 7% 15%;
+    padding: 3% 3%;
+    margin-top: 3%;
     background-color: #5676F3;
 }
 
@@ -158,6 +159,36 @@ footer {
     #gallery-center {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+
+/************Testimonials**********/
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#testimonials1 {
+    background-color: #2BAEDD;
+}
+
+.testimonial-heading {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+/***********Achievements***********/
+
+.achievement-body {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 @keyframes moveInRight {
