@@ -7,28 +7,33 @@
 
     <title>Dayananda Sagar University</title>
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
+
     <section class="navbar-section">
         <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href=""><img src="images/dsu_logo.png" width="10%" height=10%> Dayananda Sagar University</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href=""><img class="nav-logo" src="images/dsu_logo.png"> Dayananda Sagar University</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                   </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" href="#overview">Overview</a>
                     </li>
@@ -47,71 +52,224 @@
     </section>
     <header class="header">
         <div class="hero">
-            <h1 class="title ">Dayananda Sagar University</h1>
+            <h1 class="title">Dayananda Sagar University</h1>
+            <h3>Placement Website</h3>
         </div>
     </header>
-    <section class="overview_section" id="overview">
-        <div class="about">
-            <h2>Overview</h2>
-            <h3>Training and Placement</h3>
+    <section class="overview-section" id="overview">
+        <div class="sub-heading">
+            <h2><span>Training and Placements</span></h2>
         </div>
-        <div class="row col-lg-12">
-            <div class="col-lg-6">
-                <p class="overivew-content">Aligning to our belief and values in enabling an education that empower students technologically, logically and analytically to the dynamic and ever demanding business world, DSU has taken training and placement opportunities to the next
+        <div class="row col-lg-12 ">
+
+            <div class="col-lg-6 text-container">
+                <p>Aligning to our belief and values in enabling an education that empower students technologically, logically and analytically to the dynamic and ever demanding business world, DSU has taken training and placement opportunities to the next
                     level that is more than just an employment. </p>
                 <p>Leveraging the DSI legacy of five decades, <strong>Dayananda Sagar University</strong> has a well-established and centralized placement and training division - Centre of Innovation and Leadership (CIL). </br>
-                    Today, <strong>Dayananda Sagar Institutions </strong> and <strong>Dayananda Sagar University</strong> have become one of the preferred academic institutions for a large number of organizations to source the best talents under different
+                </p>
+                <p> Today, <strong>Dayananda Sagar Institutions </strong> and <strong>Dayananda Sagar University</strong> have become one of the preferred academic institutions for a large number of organizations to source the best talents under different
                     verticals and horizontals of the business world. </p>
             </div>
-            <div class="col-lg-6">
-                <img class="overview-img" src="images/college-training.jpg" alt="students" />
-            </div>
-            <div class="row col-lg-12">
-                <div class="col-lg-6">
-                    <img class="overview-img" src="images/college-training.jpg" alt="students" />
-                </div>
 
-                <div class="col-lg-6">
-                    <p class="overivew-content">
-                        The guidance to every student of the university to sort their career paths starts right from the first semester and walks through them till they reach their career goals. The training programs are custom made to every batch of engineering, commerce, and
-                        management, applied science, health science and arts courses. All the training program starts only after the thorough analyzing of student’s capabilities, personality, IQ & EQ of the students.
+            <div class="col-lg-6 text-container">
+                <img class="overview-img" src="images/training2.jpeg" alt="students" />
+            </div>
+
+        </div>
+        <div class="row col-lg-12 ">
+            <div class="col-lg-6 text-container">
+                <img class="overview-img" src="images/training1.jpg" alt="students" />
+            </div>
+            <div class="col-lg-6 text-container">
+                <p>
+                    The guidance to every student of the university to sort their career paths starts right from the first semester and walks through them till they reach their career goals.</p>
+                <p> The training programs are custom made to every batch of engineering, commerce, and management, applied science, health science and arts courses. All the training program starts only after the thorough analyzing of student’s capabilities,
+                    personality, IQ & EQ of the students.
+                </p>
+                <p>The placement cell also offers internship programs for undergraduate and postgraduate programs. Of late, <strong> Dayananda Sagar University</strong> has started with in-house summer internship program for engineering students in areas
+                    of IOT & Robotics, 3D printing, Artificial Intelligence, Machine Learning and much more.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="training-section " id="training ">
+        <div class="sub-heading">
+            <h2 class="color-section"><span>Programs and Facilities</span></h2>
+        </div>
+        <div class="row col-lg-12 ">
+
+            <div class="col-lg-6 text-container">
+                <p>In today’s vibrant job market, organizations look for core technical skills, excellent functional skills, learning and managerial skills and exceptional outlook in the young talents. Our training programs, includes <strong>pre-placement and placement training modules</strong>                    which helps students to know where they stand and where they need improvement.
+                </p>
+                <p>Our <strong> training modules</strong> for all the students of undergraduate and post graduate courses aligning to the business needs and employer expectations, we have designed our training modules that teach basic life skills, Communication
+                    skills, problem solving skills, leadership & decision-making skills and also pre-placement training such as resume writing, group discussion and mock interviews.</p>
+
+
+            </div>
+
+            <div class="col-lg-6 text-container">
+                <img class="training-img" src="images/placement1.jpg" alt="students" />
+            </div>
+
+        </div>
+        <div class="row col-lg-12 ">
+            <div class="col-lg-6 text-container">
+                <img class="training-img" src="images/placement2.jpg" alt="students" />
+            </div>
+            <div class="col-lg-6 text-container">
+                <p>The university is very well equipped to facilitate pre-placement training sessions and placement process in each and every step.<strong> </p>
+                    <p>Exclusive training rooms </strong> with:</p>
+                <ul>
+                    <li> LCD projectors with audio-video facilities </li>
+                    <li> Dedicated computer labs with Wi-Fi connectivity </li>
+                    <li> GD and interview rooms that can accommodate more than 150 students </li>
+                    <li> An in-house auditorium that can accommodate more than 200 candidates </li>
+                    <li>Industry-oriented labs for engineering students</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section class="cil-section" id="cil">
+        <div class="sub-heading">
+            <h2><span>Centre for Innovation & Leadership - CIL</span></h2>
+        </div>
+        <div class="row col-lg-12 ">
+
+            <div class="col-lg-6 text-container">
+                <p> <strong>CIL </strong> - is established in the year 2006 under the banner of DSI to bridge the gap between pure academics and the corporate realities. The Centre aims to impart innovative soft skill training programs to enable individuals
+                    to become champion leaders in their endeavour, and to sustain a high level of performance at the individual and the organizational level.</p>
+                <p><strong>CIL </strong> recognizes the challenge of unleashing the potential of individuals to transform them to achieve excellence. To face the challenge, CIL is armed with eminent Academicians, Coaches, Mentors and Thinkers with hands
+                    on experience in the corporate world to design high quality training modules. </p>
+                <p>
+                    <em>The primary aim of all the training modules would be to allow individuals to take control of their lives by re-discovering their potential.
+                    </em>
+                    <p>
+            </div>
+
+            <div class="col-lg-6 text-container">
+                <img class="overview-img" src="images/cil.jpg" alt="students" />
+            </div>
+
+        </div>
+        <div class="text-container">
+            <img class="cil-img" src="images/softskills.png" alt="students" />
+        </div>
+
+        <div class="cil-container">
+            <div class="row col-lg-12 ct-icon-boxes">
+                <div class=" ct-icon-box col-lg-4 col-md-6 col-sm-12">
+                    <i class="fa fa-graduation-cap fa-4x icon"></i>
+                    <h4>Pre - Placement & Placement Training</h4>
+                    <p class="text-container">Placement training plays a key role in a student's career. In order to stand out in the present competitive world, students require excellent functional skills, Leadership and Managerial skills and an exceptional outlook. In today's
+                        vibrant job market, organizations seek talents who have both technical and interpersonal skills. Participating in placement training enable the students to know where they stand and where they need to improve.
+
                     </p>
-                    <p>The placement cell also offers internship programs for undergraduate and postgraduate programs. Of late, <strong> Dayananda Sagar University</strong> has started with in-house summer internship program for engineering students in areas
-                        of IOT & Robotics, 3D printing, Artificial Intelligence, Machine Learning and much more.</p>
+                </div>
+                <div class=" ct-icon-box col-lg-4 col-md-6 col-sm-12">
+                    <i class="fa fa-users fa-4x icon"></i>
+                    <h4>Induction</h4>
+                    <p class="text-container">Induction training is an innovative device, which helps to make the students to get familiarize with the institution’s culture. Every new inductee needs to be in tune with the institution culture and the training provided to him/ her
+                        needs to be more so aligned with the course needs.</p>
+                </div>
+                <div class=" ct-icon-box col-lg-4 col-md-6 col-sm-12">
+                    <i class="fa fa-book fa-4x icon"></i>
+                    <h4>Continuous Soft Skills</h4>
+                    <p class="text-container">In order to be versatile and successful in today's dynamic business environment, one need to have good credentials with the realization those academics is just one face of the coin. There is a growing need to learn various Soft Skills,
+                        which form an integral part of one's overall personality to improve one's own effectiveness. These additional skills sets are highly useful in the long run to build effective teams. </p>
                 </div>
             </div>
+        </div>
+
     </section>
 </body>
-
-<!-- Footer -->
-
-<footer id="footer">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Campus 1: Dayananda Sagar University</h5>
-                    <p class="card-text"> Devarakaggalahalli, Harohalli,</p>
-                    <p class="card-text">Kanakapura Road, Ramanagara Dt.,</p>
-                    <p class="card-text">Bengaluru – 562 112</p>
-                    <p class="card-text">E-mail: admissions@dsu.edu.in</p>
-                </div>
-            </div>
+<section class="contact-section " id="contact">
+    <div class="sub-heading">
+        <h2 class="color-section"><span>Contact Us</span></h2>
+    </div>
+    <div class="contact-container">
+        <div class="contact-subheading">
+            <p>Dayananda Sagar Placements | Contact us for placement queries at Dayananda Sagar University, Bangalore</p>
+            <p>Please contact our below team members for any of the training and placement queries at Dayananda Sagar University, Bangalore.</p>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Campus 2: Dayananda Sagar University</h5>
-                    <p class="card-text"> Innovation Campus,</p>
-                    <p class="card-text"> Administrative & Main Admission office,</p>
-                    <p class="card-text">Kudlu Gate, Hosur Road, Bengaluru - 560 068</p>
-                    <p class="card-text">E-mail: dsat@dsu.edu.in</p>
-                </div>
+
+        <div class="row col-lg-12 c-icon-boxes">
+            <div class="c-icon-box col-lg-3 col-md-6 col-sm-12">
+                <h5>BE / M. Tech / BCA</h5>
+                <p>
+                    Mr. M N Guruvenkatesh</br>
+                    Vice President</br>
+                    Placements & Skill Development Centre </br>
+                    Tel: +91 80 26662226</br>
+                    Dir: 42161497, 42161749</br>
+                    Telefax: +91 80 26660789</br>
+                    Mobile: +91-9844165956</br>
+                    Email: gm-cr@dayanandasagar.edu </br>
+                    dsi_placement@yahoo.com</br>
+                </p>
             </div>
+            <div class="c-icon-box col-lg-3 col-md-6 col-sm-12">
+                <h5>BE / M. Tech / Pharmacy</h5>
+                <p>
+                    Vijay Kumar S</br>
+                    Deputy Director-Training ,Placement & Skill Development </br>
+                    Mobile: 9886394532/8884407489</br>
+                    Email: vijaykumar@dsu.edu.in</br>placements@dsi.edu.in</br>
+                </p>
+            </div>
+            <div class="c-icon-box col-lg-3 col-md-6 col-sm-12">
+                <h5>BBA/B.COM/MBA</h5>
+                <p>
+                    Ms. Payal Mandal</br>
+                    Manager - Training & Placement</br>
+                    Mobile: +91 9916986979</br>
+                    Landline: 080-42161749</br>
+                    Email: placement1@dayanandasagar.edu</br>
+                </p>
+            </div>
+            <div class="c-icon-box col-lg-3 col-md-6 col-sm-12">
+                <h5>BE / M. Tech / BCA</h5>
+                <p>
+
+                    Ms. Praveena S</br>
+                    Head Training & Operations </br>Centre for Innovation & Leadership</br>
+                    Dayananda Sagar Institutions</br>
+                    Kumaraswamy Layout, Bangalore - 560111</br>
+                    Mobile: 9900128088 </br>
+                    080-42161469</br>
+                    Email: training@dayanandasagar.edu</br>
+
+
+                </p>
+            </div>
+
+        </div>
+</section>
+<!-- Footer -->
+<footer id="footer" class="footer">
+    <div class="row col-lg-12 f-icon-boxes">
+        <div class="f-icon-box col-lg-6 col-md-4 col-sm-12">
+            <h5>Campus 1: Dayananda Sagar University</h5>
+            <p>
+                Devarakaggalahalli, Harohalli,</br>
+                Kanakapura Road, Ramanagara Dt.,</br>
+                Bengaluru – 562 112 E-mail: admissions@dsu.edu.in,</br>
+            </p>
+        </div>
+        <div class="f-icon-box col-lg-6 col-md-4 col-sm-12">
+            <h5>Campus 2: Dayananda Sagar University</h5>
+            <p>
+                Innovation Campus, Administrative & Main Admission office, Kudlu Gate, Hosur Road, Bengaluru - 560 068</br>
+                Admissions Helpline: 080 49092924 / 25</br>
+                E-mail: admissions@dsu.edu.in | dsat@dsu.edu.in
+            </p>
         </div>
     </div>
+    <div class="copyright">
+        <p>© Copyright 2021 Placement Website DSU All Rights Reserved</p>
+    </div>
 </footer>
-
 
 
 </html>
