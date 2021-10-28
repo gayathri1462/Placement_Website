@@ -198,6 +198,7 @@ header {
 
 .cil-container {
     text-align: center;
+    padding-left: 1.2rem;
 }
 
 .ct-icon-boxes .ct-icon-box {
@@ -234,6 +235,10 @@ header {
 .contact-subheading {
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+.contact-container {
+    padding-left: 1.2rem;
 }
 
 .c-icon-boxes .c-icon-box {
