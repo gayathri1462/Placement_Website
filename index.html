@@ -21,13 +21,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
+    <!--Animation On Scroll-->
+    <link rel="stylesheet" href="aos.css">
 </head>
 
 <body>
 
     <section class="navbar-section">
+
         <!-- Nav Bar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" data-aos="flip-up" data-aos-duration="1800">
             <a class="navbar-brand" href=""><img class="nav-logo" src="images/dsu_logo.png"> Dayananda Sagar University</a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,13 +54,13 @@
         </nav>
     </section>
     <header class="header">
-        <div class="hero">
-            <h1 class="title">Dayananda Sagar University</h1>
-            <h3>Placement Website</h3>
+        <div class="hero" >
+            <h1 class="title" data-aos="fade-right" data-aos-duration="2000">Dayananda Sagar University</h1>
+            <h3 data-aos="fade-left" data-aos-duration="2000">Placement Website</h3>
         </div>
     </header>
     <section class="overview-section" id="overview">
-        <div class="sub-heading">
+        <div class="sub-heading" data-aos="zoom-in" data-aos-duration="2000">
             <h2><span>Training and Placements</span></h2>
         </div>
         <div class="row col-lg-12 ">
@@ -94,7 +97,7 @@
     </section>
 
     <section class="training-section " id="training ">
-        <div class="sub-heading">
+        <div class="sub-heading" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="color-section"><span>Programs and Facilities</span></h2>
         </div>
         <div class="row col-lg-12 ">
@@ -132,7 +135,7 @@
         </div>
     </section>
     <section class="cil-section" id="cil">
-        <div class="sub-heading">
+        <div class="sub-heading" data-aos="zoom-in" data-aos-duration="2000">
             <h2><span>Centre for Innovation & Leadership - CIL</span></h2>
         </div>
         <div class="row col-lg-12 ">
@@ -183,6 +186,11 @@
         </div>
 
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+      </script>
 </body>
 <section class="contact-section " id="contact">
     <div class="sub-heading">
