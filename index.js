@@ -1,3 +1,8 @@
+$(function() {
+    AOS.init();
+});
+
+
 $.ajax("/campushiring.csv", {
     success: function(data) {
         var csv = d3.csv.parse(data);

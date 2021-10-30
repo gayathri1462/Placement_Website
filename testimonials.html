@@ -6,36 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials</title>
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <!--Animation On Scroll-->
+    <link rel="stylesheet" href="aos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="index.js"></script>
+    <script src="aos.js"></script>
 </head>
 
 <body>
     <section class="navbar-section">
         <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href=""><img src="images/dayananda-sagar-university-logo.jpeg" width="10%" height=10%> Dayananda Sagar University</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href=""><img class="nav-logo" src="images/dsu_logo.png"> Dayananda Sagar University</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                  </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Overview</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="placement.html">Placement Partners</a>
+                        <a class="nav-link " href="placement.html">Placement Partners</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  active" href="testimonials.html">Testimonials</a>
+                        <a class="nav-link active" href="testimonials.html">Testimonials</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="achievements.html">Achievements</a>
@@ -44,13 +52,18 @@
             </div>
         </nav>
     </section>
-    <section class="testimonial_section" id="testimonials">
-        <div class="about placement-heading">
-            <h2>Testimonials</h2>
-            <h2>See what students say about us:</h2>
+    <header class="header">
+        <div class="hero">
+            <h1 class="title" data-aos="fade-right" data-aos-duration="2000">Dayananda Sagar University</h1>
+            <h3 data-aos="fade-left" data-aos-duration="2000">Placement Website</h3>
         </div>
-        <h3 class="testimonial-heading">Testimonials Batch 2018-2019:</h3>
+    </header>
+    <section class="testimonial-section" id="testimonials">
+        <div class="sub-heading" data-aos="zoom-in" data-aos-duration="2000">
+            <h2><span>Testimonials</span></h2>
+        </div>
         <div id="testimonials1" class="carousel slide" data-ride="carousel">
+            <h2 class="sub-heading"><span>Testimonials Batch 2018-2019:</span></h2>
             <ol class="carousel-indicators">
                 <li data-target="#testimonials1" data-slide-to="0" class="active"></li>
                 <li data-target="#testimonials1" data-slide-to="1"></li>
@@ -58,20 +71,20 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <h4>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
-                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h4>
+                    <h5>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
+                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h5>
                     <img class="testimonial-image" src="images/Prutweesha-modified.png" alt="lady-profile">
                     <em>Prutweesha, CSE - Placed in Accenture</em>
                 </div>
                 <div class="carousel-item ">
-                    <h4>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
-                        of Mechanical Engineering. I'm also grateful to the Training and Placement Department."</h4>
+                    <h5>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
+                        of Mechanical Engineering. I'm also grateful to the Training and Placement Department."</h5>
                     <img class="testimonial-image" src="images/Chaitra-modified.png" alt="lady-profile">
                     <em>CHAITRA, CSE - Placed in Let'S Slove</em>
                 </div>
                 <div class="carousel-item">
-                    <h4>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
-                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h4>
+                    <h5>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
+                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h5>
                     <img class="testimonial-image" src="images/Varsha-modified.png" alt="lady-profile">
                     <em>Varsha, CSE -Placed in SIXT</em>
                 </div>
@@ -85,8 +98,8 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <h3 class="testimonial-heading">Testimonials Batch 2019-2020:</h3>
         <div id="testimonials2" class="carousel slide" data-ride="carousel">
+            <h2 class="sub-heading"><span id="test2">Testimonials Batch 2019-2020:</span></h2>
             <ol class="carousel-indicators">
                 <li data-target="#testimonials2" data-slide-to="0" class="active"></li>
                 <li data-target="#testimonials2" data-slide-to="1"></li>
@@ -94,20 +107,20 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <h4>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
-                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h4>
+                    <h5>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
+                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h5>
                     <img class="testimonial-image" src="images/Arpitha.png" alt="lady-profile">
                     <em>Arpita Ganesh, CSE - Placed in Mercedes Benz</em>
                 </div>
                 <div class="carousel-item ">
-                    <h4>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
-                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h4>
+                    <h5>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
+                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h5>
                     <img class="testimonial-image" src="images/Alen.png" alt="lady-profile">
                     <em>Allen  S Thomas, CSE - Placed in TATA CONSULTANCY SERVICES</em>
                 </div>
                 <div class="carousel-item">
-                    <h4>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
-                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h4>
+                    <h5>"I can positively say that Dayananda Sagar University has been the best part of my life and I have made some of the best friends a person could have. The most I admire is the support that I received from DSU especially from the Department
+                        of Computer Science Engineering. I'm also grateful to the Training and Placement Department."</h5>
                     <img class="testimonial-image" src="images/Keshavan-modified.png" alt="lady-profile">
                     <em>Keshavan, CSE - Placed in IBJ</em>
                 </div>
@@ -122,32 +135,89 @@
             </a>
         </div>
     </section>
+    <section class="contact-section " id="contact">
+        <div class="sub-heading">
+            <h2 class="color-section"><span>Contact Us</span></h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-subheading">
+                <p>Dayananda Sagar Placements | Contact us for placement queries at Dayananda Sagar University, Bangalore</p>
+                <p>Please contact our below team members for any of the training and placement queries at Dayananda Sagar University, Bangalore.</p>
+            </div>
+
+            <div class="row col-lg-12 c-icon-boxes">
+                <div class="c-icon-box col-lg-3 col-md-6 col-sm-12">
+                    <h5>BE / M. Tech / BCA</h5>
+                    <p>
+                        Mr. M N Guruvenkatesh</br>
+                        Vice President</br>
+                        Placements & Skill Development Centre </br>
+                        Tel: +91 80 26662226</br>
+                        Dir: 42161497, 42161749</br>
+                        Telefax: +91 80 26660789</br>
+                        Mobile: +91-9844165956</br>
+                        Email: gm-cr@dayanandasagar.edu </br>
+                        dsi_placement@yahoo.com</br>
+                    </p>
+                </div>
+                <div class="c-icon-box col-lg-3 col-md-6 col-sm-12">
+                    <h5>BE / M. Tech / Pharmacy</h5>
+                    <p>
+                        Vijay Kumar S</br>
+                        Deputy Director-Training ,Placement & Skill Development </br>
+                        Mobile: 9886394532/8884407489</br>
+                        Email: vijaykumar@dsu.edu.in</br>placements@dsi.edu.in</br>
+                    </p>
+                </div>
+                <div class="c-icon-box col-lg-3 col-md-6 col-sm-12">
+                    <h5>BBA/B.COM/MBA</h5>
+                    <p>
+                        Ms. Payal Mandal</br>
+                        Manager - Training & Placement</br>
+                        Mobile: +91 9916986979</br>
+                        Landline: 080-42161749</br>
+                        Email: placement1@dayanandasagar.edu</br>
+                    </p>
+                </div>
+                <div class="c-icon-box col-lg-3 col-md-6 col-sm-12">
+                    <h5>BE / M. Tech / BCA</h5>
+                    <p>
+                        Ms. Praveena S</br>
+                        Head Training & Operations </br>Centre for Innovation & Leadership</br>
+                        Dayananda Sagar Institutions</br>
+                        Kumaraswamy Layout, Bangalore - 560111</br>
+                        Mobile: 9900128088 </br>
+                        080-42161469</br>
+                        Email: training@dayanandasagar.edu</br>
+                    </p>
+                </div>
+
+            </div>
+    </section>
 
 </body>
-<footer id="footer">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Campus 1: Dayananda Sagar University</h5>
-                    <p class="card-text"> Devarakaggalahalli, Harohalli,</p>
-                    <p class="card-text">Kanakapura Road, Ramanagara Dt.,</p>
-                    <p class="card-text">Bengaluru – 562 112</p>
-                    <p class="card-text">E-mail: admissions@dsu.edu.in</p>
-                </div>
-            </div>
+<!-- Footer -->
+<footer id="footer" class="footer">
+    <div class="row col-lg-12 f-icon-boxes">
+        <div class="f-icon-box col-lg-6 col-md-4 col-sm-12">
+            <h5>Campus 1: Dayananda Sagar University</h5>
+            <p>
+                Devarakaggalahalli, Harohalli,</br>
+                Kanakapura Road, Ramanagara Dt.,</br>
+                Bengaluru – 562 112 E-mail: admissions@dsu.edu.in,</br>
+            </p>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Campus 2: Dayananda Sagar University</h5>
-                    <p class="card-text"> Innovation Campus,</p>
-                    <p class="card-text"> Administrative & Main Admission office,</p>
-                    <p class="card-text">Kudlu Gate, Hosur Road, Bengaluru - 560 068</p>
-                    <p class="card-text">E-mail: dsat@dsu.edu.in</p>
-                </div>
-            </div>
+        <div class="f-icon-box col-lg-6 col-md-4 col-sm-12">
+            <h5>Campus 2: Dayananda Sagar University</h5>
+            <p>
+                Innovation Campus, Administrative & Main Admission office, Kudlu Gate, Hosur Road, Bengaluru - 560 068</br>
+                Admissions Helpline: 080 49092924 / 25</br>
+                E-mail: admissions@dsu.edu.in | dsat@dsu.edu.in
+            </p>
         </div>
+    </div>
+    <div class="copyright">
+        <p>© Copyright 2021 Placement Website DSU All Rights Reserved</p>
     </div>
 </footer>
 
