@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    color: white;
+    margin: 2rem 2rem 2rem;
+}
+
+h3 span {
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.sub-heading {
+    margin: 1.5rem;
+    color: #ffffff;
+    background-color: #2a2a72;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.75);
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 25px;
+}
+
+p,
+input {
+    font-family: 'Lato', sans-serif;
+    line-height: 175%;
+}
+
+.left-part,
+form {
+    padding: 25px;
+}
+
+.left-part {
+    text-align: center;
+}
+
+form {
+    color: #2a2a72;
+    background: #ffffff;
+    box-shadow: 10px 10px 29px -6px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #2a2a72;
+}
+
+.title h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.checkbox input {
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.btn-item,
+button {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background: #009ffd;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.btn-item {
+    display: inline-block;
+    margin: 20px 5px 0;
+}
+
+button {
+    width: 100%;
+}
+
+button:hover,
+.btn-item:hover {
+    background: #2a2a72;
+    color: #ffffff;
+}
+
+@media (min-width: 568px) {
+    html,
+    body {
+        height: 100%;
+    }
+    .main-block {
+        flex-direction: row;
+        height: calc(100% - 50px);
+    }
+    .left-part,
+    form {
+        flex: 1;
+        height: auto;
+    }
+}
