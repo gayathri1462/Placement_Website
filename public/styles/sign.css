@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    color: white;
+    margin: 2rem 2rem 2rem;
+}
+
+h2 span {
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h3 span {
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #2a2a72;
+    padding-bottom: 1rem;
+}
+
+.sub-heading {
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #2a2a72;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+.sign-section {
+    padding-top: 1.5rem;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    line-height: 175%;
+    padding: 1rem;
+}
+
+.sign-in-form {
+    color: #2a2a72;
+    background: #ffffff;
+    box-shadow: 10px 10px 29px -6px rgba(0, 0, 0, 0.75);
+    padding: 25px;
+}
+
+.sign-up-form {
+    color: #2a2a72;
+    background: #ffffff;
+    box-shadow: 10px 10px 29px -6px rgba(0, 0, 0, 0.75);
+    padding: 25px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #2a2a72;
+}
+
+.title h3 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-item,
+button {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background: #009ffd;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.btn-item {
+    display: inline-block;
+    margin: 20px 5px 0;
+}
+
+button {
+    width: 100%;
+}
+
+button:hover,
+.btn-item:hover {
+    background: #2a2a72;
+    color: #ffffff;
+}

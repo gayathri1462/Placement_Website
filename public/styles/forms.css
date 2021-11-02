@@ -23,11 +23,16 @@ h5 {
 }
 
 .sub-heading {
-    margin: 1.5rem;
+    padding: 1rem;
     color: #ffffff;
     background-color: #2a2a72;
     border-radius: 0.5rem;
     box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+.text {
+    padding-top: 1rem;
 }
 
 .main-block {
@@ -45,8 +50,7 @@ input {
     line-height: 175%;
 }
 
-.left-part,
-form {
+.left-part {
     padding: 25px;
 }
 
@@ -54,10 +58,11 @@ form {
     text-align: center;
 }
 
-form {
+.Registration-section {
     color: #2a2a72;
     background: #ffffff;
     box-shadow: 10px 10px 29px -6px rgba(0, 0, 0, 0.75);
+    padding: 1rem;
 }
 
 .title {
@@ -86,37 +91,9 @@ select {
     border-bottom: 1px solid #eee;
 }
 
-.checkbox input {
-    margin: 0 10px 0 0;
-    vertical-align: middle;
-}
-
-.btn-item,
-button {
-    padding: 10px 5px;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: none;
-    background: #009ffd;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.btn-item {
-    display: inline-block;
-    margin: 20px 5px 0;
-}
-
-button {
-    width: 100%;
-}
-
-button:hover,
-.btn-item:hover {
-    background: #2a2a72;
-    color: #ffffff;
+.button {
+    text-align: center;
+    padding: 1rem;
 }
 
 @media (min-width: 568px) {
