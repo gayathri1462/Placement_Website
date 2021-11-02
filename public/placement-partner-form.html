@@ -24,14 +24,40 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="/styles/aos.css">
     <script src="/scripts/aos.js"></script>
+    <script>
+        function RegistrationForm() {
+            $.ajax({
+                url: 'https://api.apispreadsheets.com/data/20050/',
+                type: 'post',
+                data: $("#RegistrationForm").serializeArray(),
+                success: function() {
+                    location.href = '/final.html';
+                },
+                error: function() {
+                    location.href = '/failure.html';
+                }
+            });
+        }
+
+        $(function() {
+            $('#submits').attr('disabled', true);
+            $('#company').change(function() {
+                if ($('#fullname').val() != '' && $('#usn').val() != '' && $('#email').val() != '' && $('#phone').val() != '' && $('#comapny').val() != '') {
+                    $('#submits').attr('disabled', false);
+                } else {
+                    $('#submits').attr('disabled', true);
+                }
+            });
+        });
+    </script>
 </head>
 
 <body class="main-block">
     <div class="left-part">
         <div class="sub-heading">
-            <h3><span> Register to our campus Placements </span></h3>
+            <h3><span> Register to DSU Placement Interviews</span></h3>
         </div>
-        <div>
+        <div class="text">
             <h5>Campus 1: Dayananda Sagar University</h5>
             <p>
                 Devarakaggalahalli, Harohalli,</br>
@@ -39,7 +65,7 @@
                 Bengaluru – 562 112</br> E-mail: admissions@dsu.edu.in</br>
             </p>
         </div>
-        <div>
+        <div class="text">
             <h5>Campus 2: Dayananda Sagar University</h5>
             <p>
                 Innovation Campus, Administrative & Main Admission office</br> Kudlu Gate, Hosur Road, Bengaluru - 560 068</br>
@@ -49,22 +75,26 @@
         </div>
 
     </div>
-    <form id="RegistrationForm">
-        <div class="title">
-            <h2>Register Here</h2>
+    <div class="Registration-section">
+        <form id="RegistrationForm">
+            <div class="title">
+                <h2>Register Here</h2>
+            </div>
+            <div class="info">
+                <input type="text" name="Full Name" placeholder="Full Name" id="fullname" required>
+                <input type="text" name="USN" placeholder="USN" id="usn" required="required">
+                <input type="email" name="Email" placeholder="Email" id="email" required="required">
+                <input type="tel" name="Phone Number" pattern="[0-9]{10}" id="phone" placeholder="Phone number" required="required">
+                <input type="text" name="Company Name" placeholder="Company Name" id="company" required="required">
+            </div>
+            <p> By clicking on Register, You agree to all the Terms and Conditions of the DSU Placements Policies.</p>
+        </form>
+        <div class="button">
+            <button id="submits" class="btn btn-primary btn-lg" onclick="RegistrationForm()">Register</button>
         </div>
-        <div class="info">
-            <input class="fname" type="text" name="name" placeholder="Full name" required="required">
-            <input type="text" name="name" placeholder="USN" required="required">
-            <input type="email" name="name" placeholder="Email" required="required">
-            <input type="tel" name="name" pattern="[0-9]{10}" placeholder="Phone number" required="required">
-            <input type="text" name="name" placeholder="Company Name" required="required">
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="checkbox" required="required"><span><label>I agree to all the Terms and Conditions</label></span>
-        </div>
-        <button type="submit" onclick="SubForm()">Submit</button>
-    </form>
+
+    </div>
+
 </body>
 
 </html>

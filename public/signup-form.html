@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/sign.css">
+    <script src="/scripts/index.js"></script>
+    <!--Animation On Scroll-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="/styles/aos.css">
+    <script src="/scripts/aos.js"></script>
+    <script>
+        function SignupForm() {
+            $.ajax({
+                url: 'https://api.apispreadsheets.com/data/20047/',
+                type: 'post',
+                data: $("#SignUpForm").serializeArray(),
+                success: function() {
+                    location.href = '/success.html';
+                },
+                error: function() {
+                    location.href = '/failure.html';
+                }
+            });
+        }
+
+        function SigninForm() {
+            $.ajax({
+                url: 'https://api.apispreadsheets.com/data/20060/',
+                type: 'post',
+                data: $("#SignInForm").serializeArray(),
+                success: function() {
+                    location.href = '/success.html';
+                },
+                error: function() {
+                    location.href = '/failure.html';
+                }
+            });
+        }
+
+        $(function() {
+            $('#submit1').attr('disabled', true);
+            $('#confirmpassword').change(function() {
+                if ($('#fullname').val() != '' && $('#email').val() != '' && $('#password').val() != '' && $('#confirmpassword').val() != '') {
+                    $('#submit1').attr('disabled', false);
+                } else {
+                    $('#submit1').attr('disabled', true);
+                }
+            });
+        });
+
+        $(function() {
+            $('#submit2').attr('disabled', true);
+            $('#password').change(function() {
+                if ($('#fname').val() != '' && $('#email2').val() != '' && $('#password2').val() != '') {
+                    $('#submit2').attr('disabled', false);
+                } else {
+                    $('#submit2').attr('disabled', true);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="sub-heading">
+        <h2><span> Register to DSU campus Placements </span></h2>
+    </div>
+
+    <section class="sign-section">
+        <div class="row col-lg-12 ">
+            <div class="col-lg-6">
+                <div class="sign-up-form">
+                    <div class="title">
+                        <h3>Sign Up</h3>
+                    </div>
+                    <h5>Register Now to take part in DSU Placement Drive!</h5>
+                    <form id="SignUpForm" data-toggle="validator" role="form">
+                        <div class="info">
+                            <input type="text" class="form-control" name="Full Name" placeholder="Full Name" id="fullname" required>
+                            <input type="email" class="form-control" name="Email" id="email" placeholder="Email" data-error="Email address is invalid" required>
+                            <input type="password" data-minlength="6" name="Password" class="form-control" id="password" placeholder="Password" required>
+                            <input type="password" class="form-control" id="confirmpassword" data-match="#password" data-match-error="These don't match" placeholder="Confirm Password" required>
+                        </div>
+                    </form>
+                    <button id="submit1" class="btn btn-primary btn-lg" onclick="SignupForm()">Sign Up</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="sign-in-form">
+                    <div class="title">
+                        <h3>Sign In</h3>
+                    </div>
+                    <h5> Already Registered?</h5>
+                    <h5> Log in to Register for a Company placement!</h5>
+                    <form id="SignInForm" data-toggle="validator" role="form">
+                        <div class="info">
+                            <input type="text" class="form-control" name="Full Name" placeholder="Full Name" id="fname" required>
+                            <input type="email" class="form-control" name="Email" id="email2" placeholder="Email" data-error="Email address is invalid" required>
+                            <input type="password" data-minlength="6" name="Password" class="form-control" id="password2" placeholder="Password" required>
+                        </div>
+                    </form>
+                    <button id="submit2" class="btn btn-primary btn-lg" onclick="SigninForm()">Sign In</button>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
