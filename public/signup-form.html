@@ -65,12 +65,12 @@
         });
 
         $(function() {
-            $('#submit2').attr('disabled', true);
-            $('#password').change(function() {
-                if ($('#fname').val() != '' && $('#email2').val() != '' && $('#password2').val() != '') {
-                    $('#submit2').attr('disabled', false);
+            $('#submits').attr('disabled', true);
+            $('#passwords').change(function() {
+                if ($('#fname').val() != '' && $('#emails').val() != '' && $('#passwords').val() != '') {
+                    $('#submits').attr('disabled', false);
                 } else {
-                    $('#submit2').attr('disabled', true);
+                    $('#submits').attr('disabled', true);
                 }
             });
         });
@@ -93,9 +93,9 @@
                     <form id="SignUpForm" data-toggle="validator" role="form">
                         <div class="info">
                             <input type="text" class="form-control" name="Full Name" placeholder="Full Name" id="fullname" required>
-                            <input type="email" class="form-control" name="Email" id="email" placeholder="Email" data-error="Email address is invalid" required>
-                            <input type="password" data-minlength="6" name="Password" class="form-control" id="password" placeholder="Password" required>
-                            <input type="password" class="form-control" id="confirmpassword" data-match="#password" data-match-error="These don't match" placeholder="Confirm Password" required>
+                            <input type="email" class="form-control" name="Email" id="email" placeholder="Email (example@gmail.com)" data-error="Email address is invalid" required>
+                            <input type="password" data-minlength="6" name="Password" class="form-control" id="password" placeholder="Password (Minimum 6 characters)" required>
+                            <input type="password" class="form-control" id="confirmpassword" data-match="#password" data-match-error="These don't match" placeholder="Confirm Password (Must match with password)" required>
                         </div>
                     </form>
                     <button id="submit1" class="btn btn-primary btn-lg" onclick="SignupForm()">Sign Up</button>
@@ -111,11 +111,11 @@
                     <form id="SignInForm" data-toggle="validator" role="form">
                         <div class="info">
                             <input type="text" class="form-control" name="Full Name" placeholder="Full Name" id="fname" required>
-                            <input type="email" class="form-control" name="Email" id="email2" placeholder="Email" data-error="Email address is invalid" required>
-                            <input type="password" data-minlength="6" name="Password" class="form-control" id="password2" placeholder="Password" required>
+                            <input type="email" class="form-control" name="Email" id="emails" placeholder="Email  (example@gmail.com)" data-error="Email address is invalid" required>
+                            <input type="password" data-minlength="6" name="Password" class="form-control" id="passwords" placeholder="Password" required>
                         </div>
                     </form>
-                    <button id="submit2" class="btn btn-primary btn-lg" onclick="SigninForm()">Sign In</button>
+                    <button id="submits" class="btn btn-primary btn-lg" onclick="SigninForm()">Sign In</button>
                 </div>
             </div>
 
