@@ -287,10 +287,6 @@ header {
     background: white;
 }
 
-.gallery-item {
-    box-shadow: 10px 10px 29px -6px rgba(0, 0, 0, 0.75);
-}
-
 .gallery-item img {
     display: block;
     width: 100%;
@@ -315,6 +311,7 @@ header {
 .content_img {
     position: relative;
     float: left;
+    box-shadow: 10px 10px 29px -6px rgba(0, 0, 0, 0.75);
 }
 
 
