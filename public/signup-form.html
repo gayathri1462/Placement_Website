@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -55,8 +56,8 @@
 
         $(function() {
             $('#submit1').attr('disabled', true);
-            $('#confirmpassword').change(function() {
-                if ($('#fullname').val() != '' && $('#email').val() != '' && $('#password').val() != '' && $('#confirmpassword').val() != '') {
+            $('#password').change(function() {
+                if ($('#fullname').val() != '' && $('#usn').val() != '' && $('#email').val() != '' && $('#password').val() != '') {
                     $('#submit1').attr('disabled', false);
                 } else {
                     $('#submit1').attr('disabled', true);
@@ -93,9 +94,10 @@
                     <form id="SignUpForm" data-toggle="validator" role="form">
                         <div class="info">
                             <input type="text" class="form-control" name="Full Name" placeholder="Full Name" id="fullname" required>
+                            <input type="text" class="form-control" name="USN" placeholder="USN" id="usn" required>
                             <input type="email" class="form-control" name="Email" id="email" placeholder="Email (example@gmail.com)" data-error="Email address is invalid" required>
                             <input type="password" data-minlength="6" name="Password" class="form-control" id="password" placeholder="Password (Minimum 6 characters)" required>
-                            <input type="password" class="form-control" id="confirmpassword" data-match="#password" data-match-error="These don't match" placeholder="Confirm Password (Must match with password)" required>
+
                         </div>
                     </form>
                     <button id="submit1" class="btn btn-primary btn-lg" onclick="SignupForm()">Sign Up</button>
